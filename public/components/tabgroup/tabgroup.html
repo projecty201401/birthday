@@ -1,0 +1,24 @@
+<div id="featured">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-title">
+                    <h2>Das Geburtstagspackage</h2>
+                    <p>Das supa-dupa Geburtstagspackage mit allem drum und dran</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 tab" ng-repeat="tab in tabs" ng-click="select(tab)">
+                <div class="featured-container">
+                    <div class="featured-photos" ng-class="{active: tab.selected}">
+                        <i class="{{ tab.icon }}"></i>
+                    </div>
+                    <h3>{{ tab.title }}</h3>
+                    <p>{{ tab.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-transclude></div>

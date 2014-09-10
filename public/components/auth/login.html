@@ -1,0 +1,15 @@
+<form name="form" ng-submit="login()" method="POST" novalidate>
+    <fieldset>
+        <label for="username"></label>
+        <input type="text" id="username" name="username" ng-model="credentials.username" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="pwd"></label>
+        <input type="password" id="pwd" name="pwd" ng-model="credentials.password" required>
+    </fieldset>
+
+    <p ng-if="message" ng-bind="message"></p>
+
+    <button type="submit" ng-disabled="form.$invalid || form.$pristine">Login</button>
+</form>

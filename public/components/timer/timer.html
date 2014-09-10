@@ -1,0 +1,11 @@
+<div ng-if="!presentIsVisible">
+    <h3>Der Geschenk-Countdown:</h3>
+    <div><h4>In</h4>
+        <b>
+            {{ date.getHours() - 1 }} Stunden {{ date.getMinutes() }} Minuten {{ date.getSeconds() }} Sekunden
+        </b>
+
+        <h4>kannst du dein Geschenk sehen!</h4>
+    </div>
+</div>
+<div ng-transclude ng-if="presentIsVisible"></div>

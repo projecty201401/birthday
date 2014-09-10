@@ -1,0 +1,27 @@
+<form name="form" role="form" class="register" ng-submit="register()" ng-if="!success" novalidate>
+    <fieldset>
+        <label for="username"></label>
+        <input type="text" id="username" name="username" ng-model="newUser.username" ng-minlength="3" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" ng-model="newUser.email" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="pwd"></label>
+        <input type="password" id="pwd" name="pwd" ng-model="newUser.password" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="pwd2"></label>
+        <input type="password" id="pwd2" name="pwd2" ng-model="pwd2" required>
+    </fieldset>
+
+    <p ng-if="error" ng-bind="error"></p>
+
+    <button type="submit" ng-disabled="form.$invalid || form.$pristine"></button>
+</form>
+
+<h1 ng-if="success" translate="REGISTER.SUCCESS"></h1>

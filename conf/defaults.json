@@ -1,0 +1,18 @@
+{
+    "server": {
+        "port": 3000,
+        "session-secret": "sd1s2e4rgs2rgs2d4",
+        "session-timeout": 8640000,
+        "secure-cookie": false,
+        "trust-proxy": false
+    },
+
+    "db": {
+        "uri": "mongodb://localhost/birthday",
+        "hash-factor": 10
+    },
+
+    "account": {
+        "reset-expiration": 24
+    }
+}
