@@ -28,5 +28,7 @@
         "q": "^1.0.1",
         "moment": "^2.8.1"
     },
-    "postinstall": "bower cache clean && bower install"
+    "scripts": {
+        "postinstall": "./node_modules/bower/bin/bower install"
+    }
 }
