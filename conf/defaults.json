@@ -8,7 +8,7 @@
     },
 
     "db": {
-        "uri": "mongodb://localhost/birthday",
+        "uri": "mongodb://admin:pass_123_123@ds063879.mongolab.com:63879/heroku_app29423781",
         "hash-factor": 10
     },
 
